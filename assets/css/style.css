@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("https://picsum.photos/1920/1080");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    background-attachment: fixed;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: aliceblue;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 30px #383838;
+}
+
+header {
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+.flex {
+    display: flex;
+}
+
+.redb {
+    background-color: #f32323;
+}
+
+.greenb {
+    background-color: #16ee28;
+}
+
+.yellowb {
+    background-color: #cad805;
+}
+
+.select-car:hover {
+    transition: 400ms;
+    background-color: bisque;
+    cursor: pointer;
+}
+
+.meio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+.menu-jogador {
+    border-right: 5px solid #383838;
+    border-top: 5px solid #383838;
+    border-bottom: 5px solid #383838;
+    margin-left: 50px;
+    padding: 25px;
+}
+
+.menu-alexa {
+    margin-right: 50px;
+    border-left: 5px solid #383838;
+    border-top: 5px solid #383838;
+    border-bottom: 5px solid #383838;
+    padding: 25px;
+}
+
+.jogador-nome {
+    font-size: 30px;
+}
+
+.jogador-alexa {
+    font-size: 30px;
+}
+
+main {
+    padding: 40px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+fieldset {
+    border-color: rgb(155, 153, 153);
+    width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carta {
+    width: 70px;
+    height: 75px;
+    font-size: 50px;
+    padding-left: 10px;
+    border: 1px solid #383838;
+    border-radius: 10px;
+    transition: 400ms;
+}
+
+.separador {
+    width: 100px;
+    padding-top: 20px;
+    height: 75px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.container-ganhador {
+    display: none;
+    /*display: flex;*/
+    width: 400px;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.nome-ganhador {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.nome {
+    margin-top: 5px;
+}
+
+.icone-trophy {
+    font-size: 80px;
+}
+
+.container-meio {
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meio-e {}
+
+.meio-m {
+    display: none;
+    font-size: 80px;
+}
+
+.meio-nome {
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+.meio-d {}
+
+#cronometro {
+    display: none;
+    font-size: 60px;
+}
+
+#button-jogar {
+    color: aliceblue;
+    font-size: 25px;
+    padding: 7px;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(76, 76, 77);
+    cursor: pointer;
+    margin-top: 200px;
+}
+
+#button-jogar:hover {
+    transition: 400ms;
+    background-color: rgb(6, 172, 103);
+    box-shadow: 3px 3px 10px #383838;
+}
+
+.legendas {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-leg {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carta-leg {
+    margin-bottom: 10px;
+}
+
+.legendas-cartas {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+summary {
+    cursor: pointer;
+}
+
+/* O conteúdo começa zerado e invisível */
+.conteudo-accordion {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 1.5s ease-in-out, opacity 1.5s ease-in-out;
+}
+
+/* Esta classe será aplicada pelo JavaScript para disparar a animação suave */
+.conteudo-accordion.expandido {
+    max-height: 400px;
+    /* Altura limite para o conteúdo expandir */
+    opacity: 1;
+    padding-top: 10px;
+}
+
+.titulo-accordion {
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    padding: 5px 0;
+    user-select: none;
+}
+
+.rodadas {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.numero-rodadas {
+    font-size: 25px;
+    font-weight: bold;
+    display: none;
+}

@@ -1,11 +1,173 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <title>Jogue JokenPô contra Alexa</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <!-- Está parte tica o titulo na página -->
+        <header>
+            <h1>
+                Vamos Jogar
+            </h1>
+            <h2>
+                JokenPô
+            </h2>
+        </header>
+
+        <!-- meio é a onde vai rodar as atualizações do js -->
+        <div class="meio">
+            <nav class="menu-jogador">
+                <div class="jogador-nome">Você</div>
+                <div class="carta carta-leg select-car">&#x270A; </div>
+                <div class="carta carta-leg select-car">&#x270B; </div>
+                <div class="carta carta-leg select-car">&#x270C; </div>
+            </nav>
+
+            <main>
+                <div class="container-ganhador">
+                    <div class="nome-ganhador">
+                        <div>Vencedor</div>
+                        <div class="nome">NOME</div>
+                    </div>
+                    <div class="icone-trophy">&#x1F3C6; &#x1F60E;</div>
+                </div>
+                <div class="container-base">
+                    <div class="container-meio">
+                        <div class="meio-e">
+                            <div class="carta"><!--&#x270B;--> </div>
+                        </div>
+                        <div class="meio-m">&#x1F3C6;<div class="meio-nome">nome</div></span></div>
+                        <div class="meio-cro"><span id="cronometro">10</span>
+                            <div><button id="button-jogar">Jogar</button></div>
+                        </div>
+                        <div class="meio-d">
+                            <div class="carta"><!--&#x270C;--> </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <nav class="menu-alexa">
+                <div class="jogador-alexa">Alexa</div>
+                <div class="carta carta-leg">&#x270A; </div>
+                <div class="carta carta-leg">&#x270B; </div>
+                <div class="carta carta-leg">&#x270C; </div>
+            </nav>
+        </div>
+
+        <section>
+            <!-- Vamos informar para o jogar as rodas -->
+            <div class="rodadas">Melhor de 5 Rodadas</div>
+            <div class="numero-rodadas">0</div>
+        </section>
+
+        <footer>
+            <fieldset>
+                <!-- Estas são as legendas para o jogador -->
+                <legend>Legenda - Tutorial</legend>
+                <div class="legendas">
+
+                    <div class="legendas-cartas">
+                        <div class="container-leg">
+                            <div class="carta carta-leg">&#x270A; </div>
+                            <p>Pedra</p>
+                        </div>
+                        <div class="container-leg">
+                            <div class="carta carta-leg">&#x270B; </div>
+                            <p>Papel</p>
+                        </div>
+                        <div class="container-leg">
+                            <div class="carta carta-leg">&#x270C; </div>
+                            <p>Tesoura</p>
+                        </div>
+                    </div>
+
+                    <div class="legendas-regras">
+                        <details>
+                            <summary class="titulo-accordion">Tutorial/Regras</summary>
+
+                            <div class="conteudo-accordion">
+                                <br />
+                                <label><b>Pedra</b>: Perde para <b>Papel</b> e ganha da <b>Tesoura</b>
+                                    <div class="flex">
+                                        <div class="container-leg">
+                                            <div class="carta carta-leg greenb">&#x270B; </div>
+                                        </div>
+                                        <div class="container-leg">
+                                            <div class="separador">&#x1F448; Ganha</div>
+                                        </div>
+                                        <div class="container-leg">
+                                            <div class="carta carta-leg">&#x270A; </div>
+                                        </div>
+                                        <div class="container-leg">
+                                            <div class="separador">Perde &#x1F449;</div>
+                                        </div>
+                                        <div class="container-leg">
+                                            <div class="carta carta-leg redb">&#x270C; </div>
+                                        </div>
+                                    </div>
+                                </label>
+
+                                <label><b>Papel</b>: Perde para <b>Tesoura</b> e ganha da <b>Pedra</b>
+                                    <div class="flex">
+                                        <div class="container-leg">
+                                            <div class="carta carta-leg greenb">&#x270C; </div>
+                                        </div>
+                                        <div class="container-leg">
+                                            <div class="separador">&#x1F448; Ganha</div>
+                                        </div>
+                                        <div class="container-leg">
+                                            <div class="carta carta-leg">&#x270B; </div>
+                                        </div>
+                                        <div class="container-leg">
+                                            <div class="separador">Perde &#x1F449;</div>
+                                        </div>
+                                        <div class="container-leg">
+                                            <div class="carta carta-leg redb">&#x270A; </div>
+                                        </div>
+                                    </div>
+                                </label>
+
+                                <label><b>Tesoura</b>: Perde para <b>Pedra</b> e ganha da <b>Papel</b>
+                                    <div class="flex">
+                                        <div class="container-leg">
+                                            <div class="carta carta-leg greenb">&#x270A; </div>
+                                        </div>
+                                        <div class="container-leg">
+                                            <div class="separador">&#x1F448; Ganha</div>
+                                        </div>
+                                        <div class="container-leg">
+                                            <div class="carta carta-leg">&#x270C; </div>
+                                        </div>
+                                        <div class="container-leg">
+                                            <div class="separador">Perde &#x1F449;</div>
+                                        </div>
+                                        <div class="container-leg">
+                                            <div class="carta carta-leg redb">&#x270B; </div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </details>
+                    </div>
+
+                </div>
+            </fieldset>
+        </footer>
+    </div>
+
 </body>
+<script src="./assets/js/script.js"></script>
+
 </html>
