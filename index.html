@@ -29,30 +29,32 @@
         <div class="meio">
             <nav class="menu-jogador">
                 <div class="jogador-nome">Você</div>
-                <div class="carta carta-leg select-car">&#x270A; </div>
-                <div class="carta carta-leg select-car">&#x270B; </div>
-                <div class="carta carta-leg select-car">&#x270C; </div>
+                <div class="carta carta-leg select-car" id="carta1">&#x270A; </div>
+                <div class="carta carta-leg select-car" id="carta2">&#x270B; </div>
+                <div class="carta carta-leg select-car" id="carta3">&#x270C; </div>
+                <div class="jogador-vitoria vitorias">Vitórias 0</div>
             </nav>
 
             <main>
                 <div class="container-ganhador">
                     <div class="nome-ganhador">
-                        <div>Vencedor</div>
+                        <div id="text-vencedor">Vencedor</div>
                         <div class="nome">NOME</div>
                     </div>
                     <div class="icone-trophy">&#x1F3C6; &#x1F60E;</div>
+                    <div><button id="button-reiniciar">Jogar Novamente</button></div>
                 </div>
                 <div class="container-base">
                     <div class="container-meio">
                         <div class="meio-e">
-                            <div class="carta"><!--&#x270B;--> </div>
+                            <div class="carta-mesa" id="jogador"><!--&#x270B;--> </div>
                         </div>
                         <div class="meio-m">&#x1F3C6;<div class="meio-nome">nome</div></span></div>
                         <div class="meio-cro"><span id="cronometro">10</span>
                             <div><button id="button-jogar">Jogar</button></div>
                         </div>
                         <div class="meio-d">
-                            <div class="carta"><!--&#x270C;--> </div>
+                            <div class="carta-mesa" id="alexa"><!--&#x270C;--> </div>
                         </div>
                     </div>
                 </div>
@@ -63,6 +65,7 @@
                 <div class="carta carta-leg">&#x270A; </div>
                 <div class="carta carta-leg">&#x270B; </div>
                 <div class="carta carta-leg">&#x270C; </div>
+                <div class="alexa-vitoria vitorias">Vitórias 0</div>
             </nav>
         </div>
 
